@@ -1,0 +1,41 @@
+{
+  "name": "xcms-http",
+  "version": "0.0.1",
+  "description": "Http plugin for xcms",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "test": "make test",
+    "cover": "make test-cov",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markacola/xcms-http.git"
+  },
+  "keywords": [
+    "xcms",
+    "http"
+  ],
+  "author": "Mark Cola",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markacola/xcms-http/issues"
+  },
+  "homepage": "https://github.com/markacola/xcms-http#readme",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "istanbul": "v1.1.0-alpha.1",
+    "mocha": "^2.5.3",
+    "should": "^10.0.0",
+    "sinon": "^1.17.4",
+    "supertest": "^1.2.0"
+  },
+  "dependencies": {
+    "es6-error": "^3.0.1",
+    "statuses": "^1.3.0",
+    "xcms-core": "0.0.2"
+  }
+}
